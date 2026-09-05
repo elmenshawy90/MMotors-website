@@ -1,0 +1,28 @@
+{
+  "name": "car-dealership-server",
+  "version": "1.0.0",
+  "description": "Backend API for Car Dealership Website",
+  "main": "server.js",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "start": "node server.js",
+    "dev": "node server.js",
+    "setup:db": "node scripts/setup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.3.0",
+    "pg": "^8.23.0"
+  }
+}

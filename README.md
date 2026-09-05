@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Car Dealership Website
+
+A full-stack car dealership website built with React, Node.js/Express, and PostgreSQL.
+
+## Project Structure
+
+- `client/` - React frontend (Vite)
+- `server/` - Node.js/Express backend (REST API)
+- `database/` - SQL schema files
+- `docker-compose.yml` - PostgreSQL database setup
+
+## Prerequisites
+
+- Node.js (v18+)
+- Docker Desktop (running)
 
 ## Getting Started
 
-First, run the development server:
+### 1. Start the database (PostgreSQL via Docker)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker compose up -d
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Backend:
+```bash
+cd server
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Frontend:
+```bash
+cd client
+npm install
+```
 
-## Learn More
+### 3. Configure environment variables
 
-To learn more about Next.js, take a look at the following resources:
+Copy `server/.env.example` to `server/.env` and update values if needed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Run the backend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+cd server
+npm start
+```
+Server runs on http://localhost:5000
 
-## Deploy on Vercel
+### 5. Run the frontend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+cd client
+npm run dev
+```
+Frontend runs on http://localhost:5173
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Default Admin Login
+
+After running the `database/schema.sql` seed script:
+
+- Username: `admin`
+- Password: `admin123`
+
+## Technology Stack
+
+- **Frontend**: React 18, React Router 7, Axios, Vite
+- **Backend**: Node.js, Express, PostgreSQL (pg), JWT auth, bcrypt
+- **Database**: PostgreSQL 16
