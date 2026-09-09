@@ -15,7 +15,7 @@ const PALETTES = {
   Navy: ['#3a4a8a', '#121a33']
 };
 
-const DEFAULT_GRADIENT = ['#A6193C', '#1C1C1C'];
+const DEFAULT_GRADIENT = ['#B89858', '#1C1C1C'];
 
 function luminosity(hex) {
   const n = hex.replace('#', '');

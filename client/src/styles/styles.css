@@ -1,18 +1,19 @@
-/* ==========================================================
-   Modern Motors — Premium Car Dealership
-   Palette: Burgundy #A6193C | Red Hover #86132F | Dark #1C1C1C
+﻿/* ==========================================================
+   Modern Motors â€” Premium Car Dealership
+   Palette: Gold #B89858 (logo identity) | Black #1C1C1C
+           Gold Hover #9B7A3D | Gold Deep #82652F
            White #FFFFFF | Light Gray #F6F6F6
            Main Text #222222 | Secondary Text #666666
    Typography: Montserrat (EN) / Cairo (AR) with system fallbacks
    ========================================================== */
 
 :root {
-  --red: #a6193c;
-  --red-dark: #86132f;
-  --red-deep: #7a0f29;
-  --red-bright: #cf3a60;
-  --red-soft: rgba(166, 25, 60, 0.08);
-  --red-glow: rgba(166, 25, 60, 0.18);
+  --gold: #b89858;
+  --gold-dark: #9b7a3d;
+  --gold-deep: #82652f;
+  --gold-bright: #d3b577;
+  --gold-soft: rgba(184, 152, 88, 0.08);
+  --gold-glow: rgba(184, 152, 88, 0.18);
   --black: #1c1c1c;
   --gray-900: #1c1c1c;
   --gray-800: #252525;
@@ -22,7 +23,7 @@
   --text: #222222;
   --text-muted: #666666;
   --border: #eaeaea;
-  --danger: #a6193c;
+  --danger: #c0392b;
   --success: #1d8348;
   --radius: 12px;
   --radius-sm: 8px;
@@ -127,25 +128,25 @@ input, select, textarea {
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, var(--red), var(--red-deep));
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep));
   color: var(--white);
-  box-shadow: 0 8px 22px rgba(166, 25, 60, 0.35);
+  box-shadow: 0 8px 22px rgba(184, 152, 88, 0.35);
 }
 
 .btn-gold:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 28px rgba(166, 25, 60, 0.48);
+  box-shadow: 0 12px 28px rgba(184, 152, 88, 0.48);
 }
 
 .btn-outline {
-  border-color: var(--red-dark);
-  color: var(--red-dark);
+  border-color: var(--gold-dark);
+  color: var(--gold-dark);
   background: transparent;
 }
 
 .btn-outline:hover {
-  background: var(--red);
-  border-color: var(--red);
+  background: var(--gold);
+  border-color: var(--gold);
   color: var(--white);
 }
 
@@ -168,7 +169,7 @@ input, select, textarea {
 
 .btn-phone-light:hover {
   background: var(--white);
-  color: var(--red-dark);
+  color: var(--gold-dark);
 }
 
 .btn-lg {
@@ -243,7 +244,7 @@ input, select, textarea {
 }
 
 .lang-btn.active {
-  background: var(--red);
+  background: var(--gold);
   color: var(--white);
 }
 
@@ -279,7 +280,7 @@ input, select, textarea {
 }
 
 .topbar-item svg {
-  color: var(--red-bright);
+  color: var(--gold-bright);
   flex-shrink: 0;
 }
 
@@ -344,7 +345,7 @@ input, select, textarea {
 .navbar-brand-tagline {
   font-size: 0.68rem;
   font-weight: 700;
-  color: var(--red);
+  color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   white-space: nowrap;
@@ -372,11 +373,11 @@ input, select, textarea {
 }
 
 .nav-link:hover {
-  color: var(--red-dark);
+  color: var(--gold-dark);
 }
 
 .nav-link.active {
-  color: var(--red);
+  color: var(--gold);
 }
 
 .nav-link.active::after {
@@ -386,7 +387,7 @@ input, select, textarea {
   inset-inline-end: 14px;
   bottom: 4px;
   height: 2px;
-  background: var(--red);
+  background: var(--gold);
 }
 
 .nav-book-btn {
@@ -471,8 +472,8 @@ input, select, textarea {
 }
 
 .nav-dropdown-item:hover {
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
   padding-inline-start: 16px;
 }
 
@@ -497,7 +498,7 @@ input, select, textarea {
 }
 
 .breadcrumb-icon {
-  color: var(--red);
+  color: var(--gold);
   font-size: 0.85rem;
 }
 
@@ -506,11 +507,11 @@ input, select, textarea {
 }
 
 .breadcrumb-link:hover {
-  color: var(--red-dark);
+  color: var(--gold-dark);
 }
 
 .breadcrumb-current {
-  color: var(--red-dark);
+  color: var(--gold-dark);
 }
 
 .page-hero .breadcrumb {
@@ -524,11 +525,11 @@ input, select, textarea {
 }
 
 .page-hero .breadcrumb-link:hover {
-  color: var(--red-dark);
+  color: var(--gold-dark);
 }
 
 .page-hero .breadcrumb-current {
-  color: var(--red);
+  color: var(--gold);
 }
 
 /* ---------- Sections ---------- */
@@ -575,7 +576,7 @@ input, select, textarea {
 
 .section-kicker {
   display: inline-block;
-  color: var(--red-dark);
+  color: var(--gold-dark);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -584,7 +585,7 @@ input, select, textarea {
 }
 
 .section-dark .section-kicker {
-  color: var(--red-bright);
+  color: var(--gold-bright);
 }
 
 .section-title {
@@ -644,7 +645,7 @@ input, select, textarea {
   display: block;
   font-size: 1.7rem;
   font-weight: 800;
-  color: var(--red);
+  color: var(--gold);
   line-height: 1.1;
 }
 
@@ -694,7 +695,7 @@ input, select, textarea {
 
 .page-hero {
   background:
-    radial-gradient(60% 120% at 50% -10%, rgba(166, 25, 60, 0.06), transparent 60%),
+    radial-gradient(60% 120% at 50% -10%, rgba(184, 152, 88, 0.06), transparent 60%),
     linear-gradient(180deg, var(--white) 0%, var(--light) 100%);
   color: var(--text);
   border-bottom: 1px solid var(--border);
@@ -704,7 +705,7 @@ input, select, textarea {
 
 [dir='rtl'] .page-hero {
   background:
-    radial-gradient(60% 120% at 50% -10%, rgba(166, 25, 60, 0.06), transparent 60%),
+    radial-gradient(60% 120% at 50% -10%, rgba(184, 152, 88, 0.06), transparent 60%),
     linear-gradient(180deg, var(--white) 0%, var(--light) 100%);
 }
 
@@ -727,7 +728,7 @@ input, select, textarea {
 
 .stats-band {
   background:
-    radial-gradient(50% 120% at 85% 0%, rgba(166, 25, 60, 0.18), transparent 60%),
+    radial-gradient(50% 120% at 85% 0%, rgba(184, 152, 88, 0.18), transparent 60%),
     var(--gray-900);
   padding-block: 56px;
   text-align: center;
@@ -752,7 +753,7 @@ input, select, textarea {
 }
 
 .stats-band .stat-value {
-  color: var(--red-bright);
+  color: var(--gold-bright);
 }
 
 /* ---------- CTA banner ---------- */
@@ -762,7 +763,7 @@ input, select, textarea {
   overflow: hidden;
   background:
     radial-gradient(55% 100% at 90% 0%, rgba(255, 255, 255, 0.18), transparent 55%),
-    linear-gradient(120deg, var(--red-deep), var(--red));
+    linear-gradient(120deg, var(--gold-deep), var(--gold));
   color: var(--white);
   padding-block: 72px;
   text-align: center;
@@ -804,12 +805,12 @@ input, select, textarea {
 
 .cta-banner .btn-gold {
   background: var(--white);
-  color: var(--red);
+  color: var(--gold);
   box-shadow: 0 8px 24px rgba(28, 28, 28, 0.28);
 }
 
 .cta-banner .btn-gold:hover {
-  background: var(--red-dark);
+  background: var(--gold-dark);
   color: var(--white);
 }
 
@@ -838,7 +839,7 @@ input, select, textarea {
 .car-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(166, 25, 60, 0.55);
+  border-color: rgba(184, 152, 88, 0.55);
 }
 
 .car-card-media {
@@ -881,7 +882,7 @@ input, select, textarea {
   justify-content: center;
   gap: 8px;
   padding: 14px;
-  background: rgba(166, 25, 60, 0.96);
+  background: rgba(184, 152, 88, 0.96);
   color: var(--white);
   font-size: 0.9rem;
   font-weight: 700;
@@ -940,7 +941,7 @@ input, select, textarea {
 .car-card-price {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--red-dark);
+  color: var(--gold-dark);
 }
 
 .results-count {
@@ -972,7 +973,7 @@ input, select, textarea {
 }
 
 .spec-chip-icon {
-  color: var(--red-dark);
+  color: var(--gold-dark);
   font-size: 0.8rem;
   flex-shrink: 0;
 }
@@ -984,7 +985,7 @@ input, select, textarea {
 }
 
 .section-dark .spec-chip-icon {
-  color: var(--red-bright);
+  color: var(--gold-bright);
 }
 
 /* ---------- Why us ---------- */
@@ -1007,7 +1008,7 @@ input, select, textarea {
 .why-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
-  border-color: rgba(166, 25, 60, 0.5);
+  border-color: rgba(184, 152, 88, 0.5);
 }
 
 .why-icon {
@@ -1018,8 +1019,8 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
   font-size: 1.55rem;
 }
 
@@ -1058,15 +1059,15 @@ input, select, textarea {
 }
 
 .service-card:hover {
-  border-color: var(--red);
+  border-color: var(--gold);
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }
 
 .service-card.selected {
-  border-color: var(--red);
-  background: rgba(166, 25, 60, 0.06);
-  box-shadow: 0 0 0 3px var(--red-soft);
+  border-color: var(--gold);
+  background: rgba(184, 152, 88, 0.06);
+  box-shadow: 0 0 0 3px var(--gold-soft);
 }
 
 .service-card-icon {
@@ -1076,14 +1077,14 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
   font-size: 1.35rem;
   margin-bottom: 4px;
 }
 
 .service-card.selected .service-card-icon {
-  background: var(--red);
+  background: var(--gold);
   color: var(--white);
 }
 
@@ -1106,7 +1107,7 @@ input, select, textarea {
 
 .section-dark .service-card:hover,
 .section-dark .service-card.selected {
-  border-color: var(--red);
+  border-color: var(--gold);
 }
 
 .section-dark .service-card-title {
@@ -1164,8 +1165,8 @@ input, select, textarea {
 .filter-input:focus,
 .filter-select:focus {
   outline: none;
-  border-color: var(--red);
-  box-shadow: 0 0 0 3px var(--red-soft);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px var(--gold-soft);
 }
 
 .filter-control label {
@@ -1218,7 +1219,7 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, var(--gray-700), var(--black));
-  color: var(--red);
+  color: var(--gold);
 }
 
 .details-image-placeholder svg {
@@ -1249,7 +1250,7 @@ input, select, textarea {
 }
 
 .gallery-nav:hover {
-  background: var(--red-dark);
+  background: var(--gold-dark);
 }
 
 .gallery-nav svg {
@@ -1287,7 +1288,7 @@ input, select, textarea {
 }
 
 .gallery-thumb.is-active {
-  border-color: var(--red);
+  border-color: var(--gold);
 }
 
 .gallery-thumb img {
@@ -1335,7 +1336,7 @@ input, select, textarea {
   width: 72%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(166, 25, 60, 0.55), transparent 68%);
+  background: radial-gradient(circle, rgba(184, 152, 88, 0.55), transparent 68%);
 }
 
 .car-ph--light .car-ph-glow {
@@ -1384,7 +1385,7 @@ input, select, textarea {
 .details-price {
   font-size: 2.1rem;
   font-weight: 800;
-  color: var(--red-dark);
+  color: var(--gold-dark);
   margin-top: 14px;
 }
 
@@ -1483,7 +1484,7 @@ input, select, textarea {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--gold);
   flex-shrink: 0;
 }
 
@@ -1552,8 +1553,8 @@ input, select, textarea {
 
 .form-input:focus {
   outline: none;
-  border-color: var(--red);
-  box-shadow: 0 0 0 3px var(--red-soft);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px var(--gold-soft);
 }
 
 .form-input.input-error {
@@ -1579,9 +1580,9 @@ textarea.form-input {
 }
 
 .form-alert-error {
-  background: rgba(166, 25, 60, 0.1);
+  background: rgba(184, 152, 88, 0.1);
   color: var(--danger);
-  border: 1px solid rgba(166, 25, 60, 0.3);
+  border: 1px solid rgba(184, 152, 88, 0.3);
 }
 
 .booking-sidebar {
@@ -1598,7 +1599,7 @@ textarea.form-input {
 }
 
 .booking-info-title {
-  color: var(--red-bright);
+  color: var(--gold-bright);
   font-size: 1.1rem;
   font-weight: 800;
   margin-bottom: 18px;
@@ -1619,12 +1620,12 @@ textarea.form-input {
 }
 
 .booking-info-list svg {
-  color: var(--red-bright);
+  color: var(--gold-bright);
   flex-shrink: 0;
 }
 
 .booking-info-list a:hover {
-  color: var(--red-bright);
+  color: var(--gold-bright);
 }
 
 .booking-success {
@@ -1644,7 +1645,7 @@ textarea.form-input {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--red), var(--red-deep));
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep));
   color: var(--white);
   font-size: 2rem;
   font-weight: 800;
@@ -1685,14 +1686,14 @@ textarea.form-input {
 .about-mission {
   background: var(--light);
   border: 1px solid var(--border);
-  border-inline-start: 4px solid var(--red);
+  border-inline-start: 4px solid var(--gold);
   border-radius: var(--radius);
   padding: 28px 30px;
 }
 
 .about-mission-title {
   font-size: 1.15rem;
-  color: var(--red-dark);
+  color: var(--gold-dark);
   margin-bottom: 12px;
 }
 
@@ -1705,7 +1706,7 @@ textarea.form-input {
 .about-value-card {
   background: var(--light);
   border: 1px solid var(--border);
-  border-inline-start: 4px solid var(--red);
+  border-inline-start: 4px solid var(--gold);
   border-radius: var(--radius);
   padding: 26px 24px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -1719,7 +1720,7 @@ textarea.form-input {
 .about-value-title {
   font-size: 1.05rem;
   font-weight: 800;
-  color: var(--red-dark);
+  color: var(--gold-dark);
   margin-bottom: 8px;
 }
 
@@ -1748,12 +1749,12 @@ textarea.form-input {
 }
 
 .about-contact-list svg {
-  color: var(--red-dark);
+  color: var(--gold-dark);
   flex-shrink: 0;
 }
 
 .about-contact-list a:hover {
-  color: var(--red-dark);
+  color: var(--gold-dark);
   text-decoration: underline;
 }
 
@@ -1793,7 +1794,7 @@ textarea.form-input {
 .branch-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(166, 25, 60, 0.5);
+  border-color: rgba(184, 152, 88, 0.5);
 }
 
 .branch-card-title {
@@ -1801,7 +1802,7 @@ textarea.form-input {
   color: var(--black);
   margin-bottom: 18px;
   padding-bottom: 14px;
-  border-bottom: 2px solid var(--red);
+  border-bottom: 2px solid var(--gold);
   display: inline-block;
 }
 
@@ -1821,13 +1822,13 @@ textarea.form-input {
 }
 
 .branch-card-list svg {
-  color: var(--red-dark);
+  color: var(--gold-dark);
   flex-shrink: 0;
   margin-top: 3px;
 }
 
 .branch-card-list a:hover {
-  color: var(--red-dark);
+  color: var(--gold-dark);
   text-decoration: underline;
 }
 
@@ -1860,7 +1861,7 @@ textarea.form-input {
 .contact-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(166, 25, 60, 0.5);
+  border-color: rgba(184, 152, 88, 0.5);
 }
 
 .contact-card-icon {
@@ -1870,8 +1871,8 @@ textarea.form-input {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
   font-size: 1.3rem;
   margin-bottom: 10px;
 }
@@ -1890,7 +1891,7 @@ textarea.form-input {
 .contact-card-action {
   margin-top: 10px;
   font-weight: 700;
-  color: var(--red-dark);
+  color: var(--gold-dark);
   font-size: 0.95rem;
   word-break: break-word;
 }
@@ -1936,8 +1937,8 @@ textarea.form-input {
 .spinner {
   width: 46px;
   height: 46px;
-  border: 4px solid var(--red-soft);
-  border-top-color: var(--red);
+  border: 4px solid var(--gold-soft);
+  border-top-color: var(--gold);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -1991,7 +1992,7 @@ textarea.form-input {
 }
 
 .footer-tagline {
-  color: var(--red-bright);
+  color: var(--gold-bright);
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.1em;
@@ -2006,7 +2007,7 @@ textarea.form-input {
 }
 
 .footer-heading {
-  color: var(--red-bright);
+  color: var(--gold-bright);
   font-size: 0.92rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -2027,14 +2028,14 @@ textarea.form-input {
 }
 
 .footer-links a:hover {
-  color: var(--red-bright);
+  color: var(--gold-bright);
 }
 
 .footer-link-with-arrow {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--red-bright);
+  color: var(--gold-bright);
   font-weight: 700;
 }
 
@@ -2053,13 +2054,13 @@ textarea.form-input {
 }
 
 .footer-contact svg {
-  color: var(--red-bright);
+  color: var(--gold-bright);
   flex-shrink: 0;
   margin-top: 3px;
 }
 
 .footer-contact a:hover {
-  color: var(--red-bright);
+  color: var(--gold-bright);
 }
 
 .footer-bottom {
@@ -2135,7 +2136,7 @@ textarea.form-input {
     visibility: visible;
     transform: none;
     border: none;
-    border-inline-start: 2px solid rgba(166, 25, 60, 0.35);
+    border-inline-start: 2px solid rgba(184, 152, 88, 0.35);
     border-radius: 0;
     margin-inline-start: 10px;
     margin-block: 4px 10px;

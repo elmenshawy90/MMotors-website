@@ -1,5 +1,5 @@
-/* ============================================================
-   Admin Dashboard styles — Modern Motors (burgundy design system)
+﻿/* ============================================================
+   Admin Dashboard styles â€” Modern Motors (burgundy design system)
    Shares CSS variables from styles.css (:root).
    ============================================================ */
 
@@ -61,7 +61,7 @@
 .admin-sidebar-brand-sub {
   font-size: 0.64rem;
   font-weight: 700;
-  color: var(--red);
+  color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   white-space: nowrap;
@@ -100,14 +100,14 @@
 }
 
 .admin-nav-link:hover {
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
 }
 
 .admin-nav-link.active {
-  background: var(--red);
+  background: var(--gold);
   color: var(--white);
-  box-shadow: 0 6px 16px rgba(166, 25, 60, 0.25);
+  box-shadow: 0 6px 16px rgba(184, 152, 88, 0.25);
 }
 
 .admin-sidebar-footer {
@@ -167,7 +167,7 @@
   gap: 8px;
   font-weight: 700;
   font-size: 0.86rem;
-  color: var(--red-dark);
+  color: var(--gold-dark);
   text-decoration: none;
   padding: 9px 15px;
   border: 1.5px solid var(--border);
@@ -177,8 +177,8 @@
 }
 
 .admin-view-site:hover {
-  border-color: var(--red);
-  background: var(--red-soft);
+  border-color: var(--gold);
+  background: var(--gold-soft);
 }
 
 .admin-lang-switch {
@@ -202,12 +202,12 @@
 }
 
 .admin-lang-btn.active {
-  background: var(--red);
+  background: var(--gold);
   color: var(--white);
 }
 
 .admin-lang-btn:hover:not(.active) {
-  color: var(--red-dark);
+  color: var(--gold-dark);
 }
 
 .admin-header-user {
@@ -220,8 +220,8 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,14 +303,14 @@
 }
 
 .admin-btn--primary {
-  background: var(--red);
+  background: var(--gold);
   color: var(--white);
-  box-shadow: 0 4px 12px rgba(166, 25, 60, 0.22);
+  box-shadow: 0 4px 12px rgba(184, 152, 88, 0.22);
 }
 
 .admin-btn--primary:hover:not(:disabled) {
-  background: var(--red-dark);
-  box-shadow: 0 6px 16px rgba(134, 19, 47, 0.28);
+  background: var(--gold-dark);
+  box-shadow: 0 6px 16px rgba(155, 122, 61, 0.28);
 }
 
 .admin-btn--ghost {
@@ -371,9 +371,9 @@
 }
 
 .admin-icon-btn:hover {
-  border-color: var(--red);
-  color: var(--red-dark);
-  background: var(--red-soft);
+  border-color: var(--gold);
+  color: var(--gold-dark);
+  background: var(--gold-soft);
 }
 
 .admin-icon-btn--danger:hover {
@@ -444,8 +444,8 @@
   align-items: center;
   justify-content: center;
   font-size: 1.35rem;
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
   flex-shrink: 0;
 }
 
@@ -501,7 +501,7 @@
 }
 
 .admin-table tbody tr:hover {
-  background: rgba(166, 25, 60, 0.03);
+  background: rgba(184, 152, 88, 0.03);
 }
 
 .admin-table tbody tr:last-child td {
@@ -582,7 +582,7 @@
 
 .admin-badge--cancelled {
   background: #FDECEC;
-  color: #A6193C;
+  color: #C0392B;
 }
 
 .admin-badge--available {
@@ -592,12 +592,12 @@
 
 .admin-badge--unavailable {
   background: #FDECEC;
-  color: #A6193C;
+  color: #C0392B;
 }
 
 .admin-badge--featured {
-  background: rgba(166, 25, 60, 0.1);
-  color: #86132F;
+  background: rgba(184, 152, 88, 0.1);
+  color: #82652F;
 }
 
 .admin-dot {
@@ -625,7 +625,7 @@
 
 .admin-status-select:focus {
   outline: none;
-  border-color: var(--red);
+  border-color: var(--gold);
 }
 
 .admin-status-select.is-pending {
@@ -644,7 +644,7 @@
 }
 
 .admin-status-select.is-cancelled {
-  color: #A6193C;
+  color: #C0392B;
   border-color: #E5A9B4;
 }
 
@@ -669,13 +669,13 @@
 }
 
 .admin-chip:hover {
-  border-color: var(--red);
-  color: var(--red-dark);
+  border-color: var(--gold);
+  color: var(--gold-dark);
 }
 
 .admin-chip.active {
-  background: var(--red);
-  border-color: var(--red);
+  background: var(--gold);
+  border-color: var(--gold);
   color: var(--white);
 }
 
@@ -733,7 +733,7 @@
 }
 
 .admin-field .req {
-  color: var(--red);
+  color: var(--gold);
 }
 
 .admin-input,
@@ -754,8 +754,8 @@
 .admin-select:focus,
 .admin-textarea:focus {
   outline: none;
-  border-color: var(--red);
-  box-shadow: 0 0 0 3px var(--red-soft);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px var(--gold-soft);
 }
 
 .admin-textarea {
@@ -793,8 +793,8 @@
   width: 26px;
   height: 26px;
   border-radius: 8px;
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -850,7 +850,7 @@
 }
 
 .admin-switch input:checked + .admin-switch-track {
-  background: var(--red);
+  background: var(--gold);
 }
 
 [dir='ltr'] .admin-switch input:checked + .admin-switch-track:after {
@@ -914,8 +914,8 @@
 }
 
 .admin-image-tile.is-primary {
-  border-color: var(--red);
-  box-shadow: 0 0 0 2px var(--red-soft);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px var(--gold-soft);
 }
 
 .admin-image-tile-preview {
@@ -947,7 +947,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: var(--red);
+  background: var(--gold);
   color: #fff;
   font-size: 0.66rem;
   font-weight: 800;
@@ -974,8 +974,8 @@
 }
 
 .admin-file-btn:hover {
-  border-color: var(--red);
-  color: var(--red-dark);
+  border-color: var(--gold);
+  color: var(--gold-dark);
 }
 
 .admin-file-btn input[type='file'] {
@@ -1043,7 +1043,7 @@
 }
 
 .admin-modal-close:hover {
-  color: var(--red);
+  color: var(--gold);
 }
 
 .admin-modal-body {
@@ -1110,8 +1110,8 @@
   width: 30px;
   height: 30px;
   border-radius: 9px;
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1151,13 +1151,13 @@
   padding: 2px 9px;
   border-radius: 6px;
   letter-spacing: 0.06em;
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
 }
 
 [dir='rtl'] .admin-lang-tag--en {
-  background: var(--red-soft);
-  color: var(--red-dark);
+  background: var(--gold-soft);
+  color: var(--gold-dark);
 }
 
 /* ---------- Login ---------- */
@@ -1167,7 +1167,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(70% 90% at 50% 0%, rgba(166, 25, 60, 0.06), transparent 60%),
+  background: radial-gradient(70% 90% at 50% 0%, rgba(184, 152, 88, 0.06), transparent 60%),
     var(--light);
   padding: 20px;
 }
@@ -1334,6 +1334,6 @@
 .admin-chip:focus-visible,
 .admin-nav-link:focus-visible,
 .admin-lang-btn:focus-visible {
-  outline: 2px solid var(--red);
+  outline: 2px solid var(--gold);
   outline-offset: 2px;
 }
