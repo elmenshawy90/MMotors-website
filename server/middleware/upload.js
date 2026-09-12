@@ -2,9 +2,18 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 
-const uploadDir = path.join(__dirname, '..', 'uploads');
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
+// Vercel/Lambda filesystems are read-only except /tmp — and even /tmp is
+// ephemeral. Uploads won't persist on serverless; use S3/Cloudinary for prod.
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const uploadDir = isServerless
+  ? path.join('/tmp', 'uploads')
+  : path.join(__dirname, '..', 'uploads');
+try {
+  if (!fs.existsSync(uploadDir)) {
+    fs.mkdirSync(uploadDir, { recursive: true });
+  }
+} catch (err) {
+  console.warn('Upload dir not writable, file uploads disabled:', uploadDir, err.message);
 }
 
 const storage = multer.diskStorage({
