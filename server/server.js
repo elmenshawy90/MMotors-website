@@ -10,6 +10,9 @@ try { require('dotenv').config({ path: path.join(__dirname, '..', '.env') }); } 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Behind Vercel's reverse proxy — lets rate-limiting see real client IPs.
+app.set('trust proxy', 1);
+
 // Security middleware
 app.use(helmet());
 
