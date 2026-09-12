@@ -9,7 +9,12 @@ const useConnectionString = Boolean(process.env.DATABASE_URL);
 
 const pool = useConnectionString
   ? new Pool({
-      connectionString: process.env.DATABASE_URL,
+      // Strip libpq SSL params — TLS is configured explicitly via `ssl`
+      // below, and pg logs a warning for sslmode=require otherwise.
+      connectionString: (process.env.DATABASE_URL || '')
+        .replace(/([?&])sslmode=[^&]*(&|$)/, '$1')
+        .replace(/([?&])uselibpqcompat=[^&]*(&|$)/, '$1')
+        .replace(/[?&]$/, ''),
       // Hosted PG (Prisma/Neon/Supabase) requires SSL; harmless locally.
       ssl: isProduction || /sslmode=require/.test(process.env.DATABASE_URL || '')
         ? { rejectUnauthorized: false }
