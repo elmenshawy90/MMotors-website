@@ -4,6 +4,7 @@
 // Run from the server folder: node scripts/setup.js
 // ============================================================
 require('dotenv').config();
+try { require('dotenv').config({ path: require('path').join(__dirname, '..', '..', '.env') }); } catch (_) {}
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const pool = require('../config/db');

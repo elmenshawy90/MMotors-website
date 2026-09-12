@@ -3,7 +3,9 @@ const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const path = require('path');
+// Loads server/.env locally; on Vercel env vars come from the dashboard.
 require('dotenv').config();
+try { require('dotenv').config({ path: path.join(__dirname, '..', '.env') }); } catch (_) {}
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -19,9 +21,13 @@ const limiter = rateLimit({
 });
 app.use('/api/', limiter);
 
-// CORS - allow React frontend to connect
+// CORS - allow React frontend to connect (comma-separated for prod + preview)
+const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:5173')
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: allowedOrigins.length === 1 ? allowedOrigins[0] : allowedOrigins,
   credentials: true
 }));
 
@@ -63,7 +69,11 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ success: false, message: err.message || 'Server error.' });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// Start server (skipped on Vercel serverless — see api/index.js)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;

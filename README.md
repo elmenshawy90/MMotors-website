@@ -39,8 +39,16 @@ npm install
 ### 3. Configure environment variables
 
 Copy `server/.env.example` to `server/.env` and update values if needed.
+(`DB_NAME` must be `car_dealership` to match `docker-compose.yml`.)
 
-### 4. Run the backend
+### 4. Create tables + seed data (requires the DB from step 1 to be up)
+
+```bash
+cd server
+npm run setup
+```
+
+### 5. Run the backend
 
 ```bash
 cd server
@@ -48,7 +56,7 @@ npm start
 ```
 Server runs on http://localhost:5000
 
-### 5. Run the frontend
+### 6. Run the frontend
 
 ```bash
 cd client
